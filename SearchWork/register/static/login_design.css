@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background-image: url("https://knowlab.in/wp-content/uploads/2019/10/green-job-2014.jpg");
+  background-repeat:no-repeat;
+  background-size cover;
+  -moz-background-size:cover;
+  -webkit-background-size:cover;
+  opacity: 0.82;
+}
+
+
+.wrapper{
+  max-width: 700px;
+  width: 25%;
+  background: url("https://th.bing.com/th?q=White+Screen&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.25&pid=InlineBlock&mkt=en-WW&adlt=moderate&t=1&mw=247");
+  margin: 200px auto;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+  padding: 30px;
+}
+
+.wrapper .title{
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #fec107;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+.wrapper .form .inputfield{
+
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .btn{/*registr*/
+  width: 100%;
+   padding: 5px 10px;
+  font-size: 15px;
+  border: 0px;
+  background:  #fec107;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+}
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 23%;
+  padding: 12px;
+  border: none;
+  border-radius: 2px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+h3{
+    font-size: 15px;
+    background-image: url("");
+}
