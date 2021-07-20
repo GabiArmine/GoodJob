@@ -1,0 +1,40 @@
+.good_job{
+    background-color:rgb(238, 9, 9);
+    width: 1000%;
+    height: 150px;
+    background-size: contain;
+    /* background-repeat: no-repeat; */
+}
+.home_name{
+    display: inline-block;
+    font-size: 28px;
+    font-family: cursive;
+    font-style: italic;
+    left: 100px;
+    background-color: blue;;
+}
+
+.login{
+    display: inline-block;
+    border-radius: 20px;
+    left: 100%;
+}
+
+.login1{
+    font-size: 50px;
+    color: black;
+    background-color:blue;
+    border-radius: 20px;
+    border-left: 100px red;
+    border-right: 10px red;
+    left: 100%;
+}
+
+.login1:hover{
+    color: blue;
+    background-color: blue;
+}
+
+.registration{
+    display: inline-block;
+}

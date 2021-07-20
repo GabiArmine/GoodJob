@@ -6,35 +6,50 @@
     lineBlock&mkt=en-WW&adlt=moderate&t=1&mw=247" type="image/png">
     {%load static%}
      <link rel="stylesheet" href="{%static 'registration_design.css' %}"/>
-<div class="wrapper">
 
-    <div class="title">
-      Registration
-    </div>
 
-    <div class="form">
-       <div class="inputfield">
-          <input type="text" class="input" placeholder="Please input name">
-       </div>  
-        <div class="inputfield">
-          <input type="text" class="input" placeholder="Please input surname">
-       </div>
-       <div class="inputfield">
-          <input type="password" class="input" placeholder="Please input password">
-       </div>
-      <div class="inputfield">
-          <input type="password" class="input" placeholder="Please repeat the password">
-       </div>
-        <div class="inputfield">
-          <input type="email" class="input" placeholder="Please input email addres">
-       </div>
-      <div class="inputfield">
-        <input type="submit" value="Register" class="btn">
+    
+    
+</head>
+<body>
+   <form method="POST">
+      {% csrf_token %}
+      <div class="wrapper">
+
+         <div class="title">
+           Registration
+         </div>
+     
+         <div class="form">
+            <div class="inputfield">
+               <input type="text" name="first_name" class="input" placeholder=" Please input name">
+            </div>  
+             <div class="inputfield">
+               <input type="text" name="last_name" class="input" placeholder=" Please input surname">
+            </div>
+            <div class="inputfield">
+               <input type="text" name="username" class="input" placeholder=" Please input username">
+            </div>
+            <div class="inputfield">
+               <input type="password" name="password1" class="input" placeholder="Please input password">
+            </div>
+           <div class="inputfield">
+               <input type="password" name="password2" class="input" placeholder="Please repeat the password">
+            </div>
+             <div class="inputfield">
+               <input type="email" name="email" class="input" placeholder="Please input email addres">
+            </div>
+           <div class="inputfield">
+            <input type="submit" value="Register" class="btn" />
+             <!-- <button></button> -->
+           </div>
+         </div>
       </div>
+      
 
-    </div>
-
+      
+  </form>
 
 </div>
-</head>
+</body>
 </html>

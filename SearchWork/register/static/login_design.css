@@ -9,9 +9,9 @@
 body{
   background-image: url("https://knowlab.in/wp-content/uploads/2019/10/green-job-2014.jpg");
   background-repeat:no-repeat;
-  background-size cover;
-  -moz-background-size:cover;
-  -webkit-background-size:cover;
+  background-size: cover;
+  -moz-background-size: co ver;
+  -webkit-background-size: cover;
   opacity: 0.82;
 }
 
@@ -81,5 +81,4 @@ input,
 
 h3{
     font-size: 15px;
-    background-image: url("");
 }
