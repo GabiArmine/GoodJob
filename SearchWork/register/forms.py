@@ -1,7 +1,8 @@
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
-
+from django.shortcuts import render, redirect
+from register.models import UserProfile
 
 class RegisterForm(UserCreationForm):
     email = forms.EmailField(max_length=100, widget=forms.TextInput(attrs={'class': 'form-control', 'place\
@@ -16,7 +17,9 @@ class RegisterForm(UserCreationForm):
     'placeholder': 'Password'}), )
     password2 = forms.CharField(max_length=100, widget=forms.PasswordInput(attrs={'class': 'form-control',\
     'placeholder': 'Password Again'}), )
+    form = RegisterForm(UserCreationForm)
 
     class Meta:
         model = User
         fields = ['username', 'email', 'first_name', 'last_name', 'password1', 'password2', ]
+

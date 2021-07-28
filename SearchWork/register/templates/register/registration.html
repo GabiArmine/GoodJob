@@ -1,55 +1,81 @@
 <!Doctype html>
 <html>
 <head>
-    <title>Registration</title>
-    <link rel="icon" href="https://th.bing.com/th?q=Registration+Logo&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.25&pid=In\
-    lineBlock&mkt=en-WW&adlt=moderate&t=1&mw=247" type="image/png">
-    {%load static%}
-     <link rel="stylesheet" href="{%static 'registration_design.css' %}"/>
-
-
-    
-    
-</head>
-<body>
-   <form method="POST">
-      {% csrf_token %}
-      <div class="wrapper">
-
-         <div class="title">
-           Registration
-         </div>
-     
-         <div class="form">
-            <div class="inputfield">
-               <input type="text" name="first_name" class="input" placeholder=" Please input name">
-            </div>  
-             <div class="inputfield">
-               <input type="text" name="last_name" class="input" placeholder=" Please input surname">
-            </div>
-            <div class="inputfield">
-               <input type="text" name="username" class="input" placeholder=" Please input username">
-            </div>
-            <div class="inputfield">
-               <input type="password" name="password1" class="input" placeholder="Please input password">
-            </div>
-           <div class="inputfield">
-               <input type="password" name="password2" class="input" placeholder="Please repeat the password">
-            </div>
-             <div class="inputfield">
-               <input type="email" name="email" class="input" placeholder="Please input email addres">
-            </div>
-           <div class="inputfield">
-            <input type="submit" value="Register" class="btn" />
-             <!-- <button></button> -->
-           </div>
-         </div>
+     <link rel="stylesheet" href="new13.css" /> 
+<div class="wrapper">
+    <div class="title">
+      Registration Form
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label>First Name</label>
+          <input type="text" class="input">
+       </div>  
+        <div class="inputfield">
+          <label>Last Name</label>
+          <input type="text" class="input">
+       </div>  
+       <div class="inputfield">
+          <label>Password</label>
+          <input type="password" class="input">
+       </div>  
+      <div class="inputfield">
+          <label>Confirm Password</label>
+          <input type="password" class="input">
+       </div> 
+        <div class="inputfield">
+          <label>Gender</label>
+          <div class="custom_select">
+            <select>
+              <option value="">Select</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+       </div> 
+        <div class="inputfield">
+          <label>Email Address</label>
+          <input type="text" class="input">
+       </div> 
+      <div class="inputfield">
+	      
+          <label>Phone Number</label>
+          <input type="text" class="input" placeholder="+374">
+		       
+       </div> 
+      <div class="inputfield">
+          <label>Address</label>
+          <textarea class="textarea"></textarea>
+       </div> 
+      <div class="inputfield">
+          <label>Postal Code</label>
+          <input type="text" class="input">
+       </div> 
+      <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <p>Agreed to terms and conditions</p>
+       </div> 
+      <div class="inputfield">
+        <input type="submit" value="Register" class="btn">
       </div>
-      
-
-      
-  </form>
-
+	  
+<div class="col1">
+        <a href="https://www.facebook.com/login.php" class="fb btn" target="_blank">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+        </a>
+        <a href="https://twitter.com/login" class="twitter btn" target="_blank">
+          <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+		
+        <a href="https://accounts.google.com/signin/v2/identifier?sacu=1&oauth=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="google btn" target="_blank">
+          <i class="fa fa-google fa-fw"></i> Login with Google+
+        </a>
+      </div>
+	  
+	  
+    </div>
+	
 </div>
-</body>
-</html>
+
